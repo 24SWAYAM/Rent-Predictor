@@ -1,0 +1,64 @@
+body{
+  background-color: black;
+}
+  form {
+    border: 5px solid #38b43c;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(155, 41, 248);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .input-group {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 30px;
+    padding-left: 0.5cm;
+  }
+  
+  .label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    
+  }
+  
+  .input-group select,
+  .input-group input[type="number"],
+  .input-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  
+  .input-group button[type="submit"] {
+    background-color: #38b43c;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .input-group button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #45a049;
+    margin-top: 50px;
+    font-size: 60px;
+    text-decoration: lawngreen;
+  }
+  
+  #bedroom,#area,#bathroom,#localities{
+    padding: 10px;
+  }

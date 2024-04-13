@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rent Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+  
+    <h1>Rent Prediction</h1>
+    <form action="/predict" method="post">
+        <div class="main">
+        <div class="input-group">
+            <label for="seller_type">Seller Type:</label>
+            <select name="seller_type" id="seller_type">
+                <option value="OWNER">Owner</option>
+                <option value="AGENT">Agent</option>
+                <option value="BUILDER">Builder</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="bedroom">Number of Bedrooms:</label>
+            <input type="number" name="bedroom" id="bedroom" min="1" required>
+        </div>
+        <div class="input-group">
+            <label for="layout_type">Layout Type:</label>
+            <select name="layout_type" id="layout_type">
+                <option value="BHK">BHK</option>
+                <option value="RK">RK</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="property_type">Property Type:</label>
+            <select name="property_type" id="property_type">
+                <option value="Apartment">Apartment</option>
+                <option value="Studio Apartment">Studio Apartment</option>
+                <option value="Independent House">Independent House</option>
+                <option value="Independent Floor">Independent Floor</option>
+                <option value="Villa">Villa</option>
+                <option value="Penthouse">Penthouse</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="area">Area (in square feet):</label>
+            <input type="number" name="area" id="area" required>
+        </div>
+        <div class="input-group">
+            <label for="furnish_type">Furnish Type:</label>
+            <select name="furnish_type" id="furnish_type">
+                <option value="Furnished">Furnished</option>
+                <option value="Semi-Furnished">Semi-Furnished</option>
+                <option value="Unfurnished">Unfurnished</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="bathroom">Number of Bathrooms:</label>
+            <input type="number" name="bathroom" id="bathroom" min="1" required>
+        </div>
+        <div class="input-group">
+            <label for="city">City:</label>
+            <select name="city" id="city">
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Pune">Pune</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="localities">Locality:</label>
+            <input type="text" name="localities" id="localities" required>
+        </div>
+    </div>
+        <div class="input-group">
+            <button type="submit">Predict</button>
+        </div>
+    </form>
+</body>
+</html>
